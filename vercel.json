@@ -1,13 +1,15 @@
 {
   "rewrites": [
-    { "source": "/https/:match/:url*", "destination": "https://:match/:url*" },
-    { "source": "/https/:match/:url*/", "destination": "https://:match/:url*/" },
-    { "source": "/http/:match/:url*", "destination": "http://:match/:url*" },
-    { "source": "/http/:match/:url*/", "destination": "http://:match/:url*/" },
-    { "source": "/wss/:match/:url*", "destination": "wss://:match/:url*" },
-    { "source": "/:protocol/:match/:url*", "destination": ":protocol://:match/:url*" },
-    { "source": "/:protocol/:match/:url*/", "destination": ":protocol://:match/:url*/" },
-    { "source": "/:protocol*/:match/:url*", "destination": ":protocol://:match/:url*" },
-    { "source": "/:protocol*/:match/:url*/", "destination": ":protocol://:match/:url*/" }
+    {
+      "source": "/fur", 
+      "destination": "http://hk4.256384.xyz:2082/fur"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*", 
+      "destination": "/", 
+      "statusCode": 404
+    }
   ]
 }
